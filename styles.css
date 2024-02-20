@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url(bluesoundwave.gif);
+    background-size: cover; /* Cover the entire window */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    
+}
+
+#game-container {
+    position: relative;
+    /*margin-top: 50px;  Adjust the margin-top value as needed
+    margin-left: 50px; /* Adjust the margin-top value as needed */
+    width: 1200px;    /* Adjust width as needed */
+    height: 800px;	  /* Adjust as needed */
+    display: flex;
+    /* align-items: center;
+     justify-content: center;  */
+     position: relative;
+     margin: auto;
+     overflow: hidden;
+    /*border-width: 10px;
+    //border-style: double;
+    //border-color: grey; */
+	border-top:    3px solid  #0099dd;
+	border-right:  3px dashed #0099dd;
+	border-bottom: 3px solid #0099dd;
+	border-left:   3px dashed  #0099dd;
+	outline: 2px solid #dd1177;
+  outline-offset: 40px;
+  /* background image controls */
+  	background-image: url("moving-space01.gif");
+  	background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+}
+
+.paddle {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    
+    /*color: #FF1111;*/
+}
+
+.paddle-left {
+    background-color: #bbb0ff;
+    background-image: url("ernie.png");
+	/*background-image: url("multi1.gif"); /* URL or path to the left paddle image */
+	background-size: 30px 110px;
+    background-position: center;
+}
+
+.paddle-right {
+    background-color: #ffb009;
+    background-image: url("bert.png");
+    /*background-image: url("multi1.gif"); /* URL or path to the right paddle image */
+    /*background-repeat: no-repeat;*/
+    background-size: 37px 110px;
+    background-position: center;
+}
+
+#leftPaddle {
+    left: 20px;
+}
+
+#rightPaddle {
+    right: 20px;
+}
+
+#ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffb009;
+    border-radius: 50%;
+}
+
+#scoreboard {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: #dd1177;
+}
+
+#countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #cccccc;
+    display: none;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: bold;
+   font-family: fantasy, "papyrus", red serifs;
+    text-shadow: 1px 1px 2px blue, 0 0 0.6em pink, 0 0 0.9em magenta;
+    color: #0088ff;
+    display: none;
+}
+
+#resetButton {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    color: #888888;
+    transform: translateX(-50%);
+    background-color: #000033;
+}
+
+#difficulty-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+button {
+    margin: 5px;
+}
