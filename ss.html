@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Tennis</title>
+    <link rel="stylesheet" href="ss.css">
+</head>
+<body>
+   <p>.</p>
+   <P>
+    <div id="game-container">
+        <div id="leftPaddle" class="paddle paddle-left"></div>
+		<div id="rightPaddle" class="paddle paddle-right"></div>
+
+        <div id="ball"><img id="ball" src="ballspin.gif">
+</div>
+        <div id="title">Sesame Tennis</div>
+
+        <div id="scoreboard">
+            <span id="leftScore">Ernie</span> &nbsp&nbsp  -  &nbsp&nbsp  <span id="rightScore">Bert</span>
+        </div>
+        <div id="countdown"></div>
+        <div id="title"></div>
+        <button id="resetButton">START / RESET</button>
+        <div id="difficulty-buttons">
+            <button id="easyButton">Easy</button>
+            <button id="mediumButton">Medium</button>
+            <button id="hardButton">Hard</button>
+        </div>
+    </div>
+    <audio id="hitSound" src="ernie-laugh.mp3"></audio>
+    <audio id="righthitSound" src="bert-laugh.mp3"></audio>
+    <audio id="hitWallSound" src="ping.mp3"></audio>
+    <audio id="startSound" src="intro.mp3"></audio>
+    <audio id="scoreSound" src="ssTheme.mp3"></audio>
+    <audio id="goalSound" src="goal.mp3"></audio>
+    <script src="ss.js"></script>
+    </p>
+</body>
+</html>
